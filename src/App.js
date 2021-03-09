@@ -68,22 +68,19 @@ function App() {
   ) : null;
 
   return (
-    <>
-      <div className="App" id="app">
-        <UIFrame
-          handleOpenModal={setShowModal}
-          editElement={editElement}
-          removeElement={removeElement}
-          form={form}
-          activeElement={activeElement}
-          setActiveElement={setActiveElement}
-          setFormCss={setFormCss}
-        />
-        <CodeFrame form={form} css={formCss} />
-        {modal}
-      </div>
-      <div id="modal"></div>
-    </>
+    <div className="App" id="app">
+      <UIFrame
+        handleOpenModal={setShowModal}
+        editElement={editElement}
+        removeElement={removeElement}
+        form={form}
+        activeElement={activeElement}
+        setActiveElement={setActiveElement}
+        setFormCss={setFormCss}
+      />
+      <CodeFrame form={form} css={formCss} />
+      {modal}
+    </div>
   );
 }
 
