@@ -15,8 +15,8 @@ export const Menu = ({
   prefill,
   updateElement,
 }) => {
-  const handleClick = (e) => {
-    selectElement(e.target.innerText.toLowerCase());
+  const handleClick = (type) => {
+    selectElement(type);
   };
 
   const getCreationElementForm = (element) => {
@@ -79,11 +79,11 @@ export const Menu = ({
         {selectedElement ? "Element settings" : "Choose element"}
       </h3>
       {!selectedElement ? (
-        <div className="pads-container" onClick={handleClick}>
-          <Pad title="Input" />
-          <Pad title="Select" />
-          <Pad title="Checkbox" />
-          <Pad title="Button" />
+        <div className="pads-container">
+          <Pad title="Input" onClick={handleClick} />
+          <Pad title="Select" onClick={handleClick} />
+          <Pad title="Checkbox" onClick={handleClick} />
+          <Pad title="Button" onClick={handleClick} />
         </div>
       ) : (
         getCreationElementForm(selectedElement)

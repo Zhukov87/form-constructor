@@ -21,35 +21,45 @@ function App() {
     setPrefill(null);
   };
 
-  const createElement = useCallback((element) => {
-    setForm(() => [...form, element]);
-  }, [form]);
+  const createElement = useCallback(
+    (element) => {
+      setForm(() => [...form, element]);
+    },
+    [form]
+  );
 
-  const editElement = useCallback((elementId) => {
-    const element = form.find((elem) => elem.attributes.id === elementId);
-    setSelectedElement(element.type);
-    setShowModal(true);
-    setPrefill(element);
-  }, [form]);
+  const editElement = useCallback(
+    (elementId) => {
+      const element = form.find((elem) => elem.attributes.id === elementId);
+      setSelectedElement(element.type);
+      setShowModal(true);
+      setPrefill(element);
+    },
+    [form]
+  );
 
-  const updateElement = useCallback((newData) => {
-    const updatedForm = form.map((elem) => {
-      if (elem.attributes.id === newData.id) {
-        return {...elem, attributes: newData};
-      }
+  const updateElement = useCallback(
+    (newData) => {
+      const updatedForm = form.map((elem) => {
+        if (elem.attributes.id === newData.id) {
+          return { ...elem, attributes: newData };
+        }
 
-      return elem;
-    });
+        return elem;
+      });
 
-    setForm(updatedForm);
-  }, [form]);
+      setForm(updatedForm);
+    },
+    [form]
+  );
 
-  const removeElement = useCallback((elementId) => {
-    const nextForm = form.filter(
-      (elem) => elem.attributes.id !== elementId
-    );
-    setForm(nextForm);
-  }, [form]);
+  const removeElement = useCallback(
+    (elementId) => {
+      const nextForm = form.filter((elem) => elem.attributes.id !== elementId);
+      setForm(nextForm);
+    },
+    [form]
+  );
 
   const modal = showModal ? (
     <Modal showModal={showModal} closeModal={setShowModal}>

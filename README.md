@@ -9,4 +9,4 @@
 ### How to use
   - To add an element, click the "Add element" button and select the needed element.
   - Click an element to edit and delete it.
-  - You can switch code between html and css in the code frame to copy and embed on your site
+  - You can switch code between html and css in the code frame to copy and embed on your site.
