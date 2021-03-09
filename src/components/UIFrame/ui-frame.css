@@ -1,0 +1,26 @@
+.ui-frame-container {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 800px;
+}
+
+.ui-frame-title {
+    position: absolute;
+    top: -36px;
+    left: 220px;
+    background: white;
+    opacity: 10;
+    width: 70px;
+    text-align: center;
+}
+
+.ui-frame-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 480px;
+}

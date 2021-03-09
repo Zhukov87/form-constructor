@@ -1,0 +1,18 @@
+.pad {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pad:hover {
+    background-color: darkgrey;
+}
+
+.pad-title {
+    margin: auto;
+}

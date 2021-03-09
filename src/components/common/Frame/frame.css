@@ -1,0 +1,17 @@
+.frame-container {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 800px;
+}
+
+.frame-title {
+    position: absolute;
+    top: -36px;
+    left: 220px;
+    background: white;
+    opacity: 10;
+    width: 70px;
+    text-align: center;
+}

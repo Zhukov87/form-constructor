@@ -1,0 +1,25 @@
+.select {
+    width: 408px;
+    height: 38px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.select-with-settings {
+    width: 349px;
+    height: 38px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.select-title {
+    margin: 5px 0;
+    line-height: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.select-is-required {
+    color: red;
+}

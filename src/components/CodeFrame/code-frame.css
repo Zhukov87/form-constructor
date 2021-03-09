@@ -1,0 +1,38 @@
+.code-frame-container {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 800px;
+}
+
+.code-frame-title {
+    position: absolute;
+    top: -36px;
+    left: 220px;
+    background: white;
+    opacity: 10;
+    width: 70px;
+    text-align: center;
+}
+
+.code-container {
+    width: 440px;
+    margin: 30px;
+    height: 691px;
+    white-space: break-spaces;
+    overflow: overlay;
+}
+
+.code-frame-buttons-container {
+    margin: 10px;
+    width: 479px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-frame-button {
+    width: 49%;
+    padding: 10px 0;
+    border-radius: 10px;
+}

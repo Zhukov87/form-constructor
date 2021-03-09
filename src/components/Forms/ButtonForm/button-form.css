@@ -1,0 +1,32 @@
+.button-form-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-form-settings {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-around;
+}
+
+.button-form-buttons-container {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-view-element {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

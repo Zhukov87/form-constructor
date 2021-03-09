@@ -1,0 +1,25 @@
+.input {
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.input-with-settings {
+    width: 340px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.input-title {
+    margin: 0 0 5px 0;
+    line-height: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input-is-required {
+    color: red;
+}
